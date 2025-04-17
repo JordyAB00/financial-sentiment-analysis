@@ -7312,6 +7312,7 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7529,27 +7530,27 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 1. Import libraries</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="kn">import</span> <span class="nn">nltk</span>
-<span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">word_tokenize</span>
-<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
-<span class="kn">from</span> <span class="nn">nltk.stem</span> <span class="kn">import</span> <span class="n">WordNetLemmatizer</span>
-<span class="kn">import</span> <span class="nn">re</span>
-<span class="kn">import</span> <span class="nn">string</span>
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">CountVectorizer</span><span class="p">,</span> <span class="n">TfidfVectorizer</span>
-<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">MultinomialNB</span>
-<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
-<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span><span class="p">,</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">accuracy_score</span>
-<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">nltk</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">nltk.tokenize</span><span class="w"> </span><span class="kn">import</span> <span class="n">word_tokenize</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">nltk.corpus</span><span class="w"> </span><span class="kn">import</span> <span class="n">stopwords</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">nltk.stem</span><span class="w"> </span><span class="kn">import</span> <span class="n">WordNetLemmatizer</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">string</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.feature_extraction.text</span><span class="w"> </span><span class="kn">import</span> <span class="n">CountVectorizer</span><span class="p">,</span> <span class="n">TfidfVectorizer</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.naive_bayes</span><span class="w"> </span><span class="kn">import</span> <span class="n">MultinomialNB</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.ensemble</span><span class="w"> </span><span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">classification_report</span><span class="p">,</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">accuracy_score</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
 <span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">'ignore'</span><span class="p">)</span>
 
 <span class="c1"># Set visualization style</span>
@@ -7565,7 +7566,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 2. Load and Explore the Data</span>
@@ -7722,7 +7723,7 @@ According to the Finnish-Russian Chamber of Commerce , all the major constructio
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 3.1 Sentiment Distribution Visualization</span>
@@ -7764,33 +7765,33 @@ According to the Finnish-Russian Chamber of Commerce , all the major constructio
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="An%C3%A1lisis-de-la-Distribuci%C3%B3n-de-Sentimientos">Análisis de la Distribución de Sentimientos<a class="anchor-link" href="#An%C3%A1lisis-de-la-Distribuci%C3%B3n-de-Sentimientos">¶</a></h2><p>La gráfica muestra una distribución desbalanceada de sentimientos en el conjunto de datos financieros:</p>
+<h2 id="Sentiment-Distribution-Analysis">Sentiment Distribution Analysis<a class="anchor-link" href="#Sentiment-Distribution-Analysis">¶</a></h2><p>The chart shows an imbalanced distribution of sentiments in the financial dataset:</p>
 <ul>
-<li><strong>Neutral</strong>: 3,130 ejemplos (53.7%)</li>
-<li><strong>Positivo</strong>: 1,852 ejemplos (31.8%)</li>
-<li><strong>Negativo</strong>: 860 ejemplos (14.5%)</li>
+<li><strong>Neutral</strong>: 3,130 examples (53.7%)</li>
+<li><strong>Positive</strong>: 1,852 examples (31.8%)</li>
+<li><strong>Negative</strong>: 860 examples (14.5%)</li>
 </ul>
-<p>Este desbalance es bastante significativo y típico en datos financieros, donde:</p>
+<p>This imbalance is significant and typical in financial data, where:</p>
 <ol>
-<li><p><strong>Predominancia neutral</strong>: La mayoría de las comunicaciones financieras tienden a ser objetivas y fácticas, evitando lenguaje excesivamente positivo o negativo.</p>
+<li><p><strong>Neutral predominance</strong>: Most financial communications tend to be objective and factual, avoiding excessively positive or negative language.</p>
 </li>
-<li><p><strong>Sesgo positivo</strong>: Hay casi el doble de ejemplos positivos que negativos, lo que podría reflejar un optimismo general en las comunicaciones financieras o una tendencia a presentar la información de manera favorable.</p>
+<li><p><strong>Positive bias</strong>: There are nearly twice as many positive examples as negative ones, potentially reflecting a general optimism in financial communications or a tendency to present information favorably.</p>
 </li>
-<li><p><strong>Minoría negativa</strong>: Los textos con sentimiento negativo representan apenas un 14.5% del total, lo que plantea desafíos para el entrenamiento del modelo, ya que tendrá menos ejemplos para aprender a identificar este tipo de sentimiento.</p>
+<li><p><strong>Negative minority</strong>: Texts with negative sentiment represent only 14.5% of the total, which presents challenges for model training as it will have fewer examples to learn from for this sentiment type.</p>
 </li>
 </ol>
-<h3 id="Implicaciones-para-el-Modelado">Implicaciones para el Modelado<a class="anchor-link" href="#Implicaciones-para-el-Modelado">¶</a></h3><p>Este desbalance de clases tendrá varias implicaciones importantes para nuestro modelo de clasificación:</p>
+<h3 id="Implications-for-Modeling">Implications for Modeling<a class="anchor-link" href="#Implications-for-Modeling">¶</a></h3><p>This class imbalance will have several important implications for our classification model:</p>
 <ol>
-<li><p><strong>Riesgo de sesgo</strong>: El modelo podría sesgarse hacia las clases mayoritarias (neutral y positiva) y tener dificultades para detectar correctamente el sentimiento negativo.</p>
+<li><p><strong>Risk of bias</strong>: The model might become biased toward majority classes (neutral and positive) and struggle to correctly detect negative sentiment.</p>
 </li>
-<li><p><strong>Evaluación del rendimiento</strong>: La precisión general (accuracy) podría no ser la mejor métrica para evaluar el modelo debido al desbalance. Será importante analizar métricas como precision, recall y F1-score para cada clase.</p>
+<li><p><strong>Performance evaluation</strong>: Overall accuracy might not be the best metric due to the imbalance. We'll need to analyze precision, recall, and F1-score for each class.</p>
 </li>
-<li><p><strong>Estrategias a considerar</strong>:</p>
+<li><p><strong>Strategies to consider</strong>:</p>
 <ul>
-<li>Técnicas de submuestreo o sobremuestreo para balancear las clases</li>
-<li>Uso de pesos de clase en los algoritmos que lo permitan</li>
-<li>Ajuste de umbrales de decisión</li>
-<li>Enfoque en el F1-score como métrica de evaluación</li>
+<li>Undersampling or oversampling techniques to balance classes</li>
+<li>Class weights in algorithms that support them</li>
+<li>Threshold adjustment for decision boundaries</li>
+<li>Focus on F1-score as an evaluation metric</li>
 </ul>
 </li>
 </ol>
@@ -7802,7 +7803,7 @@ According to the Finnish-Russian Chamber of Commerce , all the major constructio
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 3.2 Text Length Analysis</span>
@@ -7840,30 +7841,29 @@ According to the Finnish-Russian Chamber of Commerce , all the major constructio
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="An%C3%A1lisis-de-la-Distribuci%C3%B3n-de-Longitud-de-Texto-por-Sentimiento">Análisis de la Distribución de Longitud de Texto por Sentimiento<a class="anchor-link" href="#An%C3%A1lisis-de-la-Distribuci%C3%B3n-de-Longitud-de-Texto-por-Sentimiento">¶</a></h2><p>El histograma muestra cómo varía la longitud de texto en caracteres para cada categoría de sentimiento:</p>
-<h3 id="Observaciones-Clave">Observaciones Clave<a class="anchor-link" href="#Observaciones-Clave">¶</a></h3><ol>
-<li><p><strong>Distribución general</strong>: Todos los tipos de sentimientos muestran una distribución aproximadamente normal con asimetría positiva (cola a la derecha), indicando que la mayoría de los textos son de longitud moderada, con algunos textos extremadamente largos.</p>
+<h2 id="Text-Length-Distribution-Analysis-by-Sentiment">Text Length Distribution Analysis by Sentiment<a class="anchor-link" href="#Text-Length-Distribution-Analysis-by-Sentiment">¶</a></h2><p>The histogram shows how text length varies for each sentiment category:</p>
+<h3 id="Key-Observations">Key Observations<a class="anchor-link" href="#Key-Observations">¶</a></h3><ol>
+<li><p><strong>General distribution</strong>: All sentiment types show approximately normal distributions with positive skew (right tail), indicating that most texts are of moderate length, with some extremely long texts.</p>
 </li>
-<li><p><strong>Diferencias por sentimiento</strong>:</p>
+<li><p><strong>Differences by sentiment</strong>:</p>
+<ul>
+<li><strong>Neutral</strong>: Shows the greatest variability in length and tends to have longer texts on average, with a peak around 90-110 characters.</li>
+<li><strong>Positive</strong>: Concentrated mainly in the 50-100 character range, with a peak near 60 characters.</li>
+<li><strong>Negative</strong>: Tends to have the shortest texts, with a peak around 70 characters, and fewer long texts.</li>
+</ul>
+</li>
+<li><p><strong>Analytical implications</strong>:</p>
+<ul>
+<li>More concise negative texts might reflect direct statements about problems or losses.</li>
+<li>Longer neutral texts likely present detailed factual information or technical descriptions.</li>
+<li>The intermediate length of positive texts might indicate a balance between delivering good news and maintaining a professional tone.</li>
+</ul>
 </li>
 </ol>
-<ul>
-<li><strong>Neutral</strong>: Presenta la mayor variabilidad en longitud y tiende a tener textos más largos en promedio, con un pico alrededor de los 90-110 caracteres.</li>
-<li><strong>Positivo</strong>: Se concentra principalmente en el rango de 50-100 caracteres, con un pico cerca de los 60 caracteres.</li>
-<li><strong>Negativo</strong>: Tiende a tener los textos más cortos, con un pico alrededor de los 70 caracteres, y menos textos de gran longitud.</li>
-</ul>
-<ol start="3">
-<li><strong>Implicaciones para el análisis</strong>:</li>
-</ol>
-<ul>
-<li>Los textos negativos más concisos podrían reflejar declaraciones directas sobre problemas o pérdidas.</li>
-<li>Los textos neutrales más extensos probablemente presentan información factual detallada o descripciones técnicas.</li>
-<li>La longitud intermedia de textos positivos podría indicar un equilibrio entre brindar buenas noticias y mantener un tono profesional.</li>
-</ul>
-<h3 id="Consideraciones-para-el-Modelado">Consideraciones para el Modelado<a class="anchor-link" href="#Consideraciones-para-el-Modelado">¶</a></h3><ul>
-<li>La variación en longitud podría ser una característica informativa para el modelo, por lo que podríamos considerar incluir la longitud del texto como una característica adicional.</li>
-<li>Podríamos explorar normalización por longitud para algunas técnicas de vectorización.</li>
-<li>Para textos muy largos o muy cortos, puede ser útil examinar si el modelo comete más errores, lo que sugeriría la necesidad de técnicas adicionales para manejar estos casos extremos.</li>
+<h3 id="Modeling-Considerations">Modeling Considerations<a class="anchor-link" href="#Modeling-Considerations">¶</a></h3><ul>
+<li>The variation in length could be an informative feature for the model, so we might consider including text length as an additional feature.</li>
+<li>We could explore length normalization for some vectorization techniques.</li>
+<li>For very long or very short texts, it may be useful to examine whether the model makes more errors, suggesting the need for additional techniques to handle these extreme cases.</li>
 </ul>
 </div>
 </div>
@@ -7873,7 +7873,7 @@ According to the Finnish-Russian Chamber of Commerce , all the major constructio
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 3.3 Word Count Analysis</span>
@@ -7911,43 +7911,42 @@ According to the Finnish-Russian Chamber of Commerce , all the major constructio
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="An%C3%A1lisis-de-la-Distribuci%C3%B3n-de-Conteo-de-Palabras-por-Sentimiento">Análisis de la Distribución de Conteo de Palabras por Sentimiento<a class="anchor-link" href="#An%C3%A1lisis-de-la-Distribuci%C3%B3n-de-Conteo-de-Palabras-por-Sentimiento">¶</a></h2><p>El diagrama de caja (boxplot) muestra la distribución del número de palabras en los textos, segmentados por sentimiento:</p>
-<h3 id="Observaciones-Principales">Observaciones Principales<a class="anchor-link" href="#Observaciones-Principales">¶</a></h3><ol>
-<li><strong>Mediana de palabras por sentimiento</strong>:</li>
-</ol>
+<h2 id="Word-Count-Distribution-Analysis-by-Sentiment">Word Count Distribution Analysis by Sentiment<a class="anchor-link" href="#Word-Count-Distribution-Analysis-by-Sentiment">¶</a></h2><p>The boxplot displays the distribution of word counts in texts, segmented by sentiment:</p>
+<h3 id="Main-Observations">Main Observations<a class="anchor-link" href="#Main-Observations">¶</a></h3><ol>
+<li><p><strong>Median words by sentiment</strong>:</p>
 <ul>
-<li><strong>Neutral</strong>: Aproximadamente 21 palabras (mediana más alta)</li>
-<li><strong>Positivo</strong>: Alrededor de 18 palabras</li>
-<li><strong>Negativo</strong>: Cerca de 17 palabras (mediana más baja)</li>
+<li><strong>Neutral</strong>: Approximately 21 words (highest median)</li>
+<li><strong>Positive</strong>: Around 18 words</li>
+<li><strong>Negative</strong>: About 17 words (lowest median)</li>
 </ul>
-<ol start="2">
-<li><strong>Variabilidad</strong>:</li>
-</ol>
+</li>
+<li><p><strong>Variability</strong>:</p>
 <ul>
-<li><strong>Neutral</strong>: Mayor dispersión, con un rango intercuartílico más amplio (aproximadamente 15-28 palabras)</li>
-<li><strong>Positivo y Negativo</strong>: Muestran una variabilidad similar, pero menor que los textos neutrales</li>
+<li><strong>Neutral</strong>: Greater dispersion, with a wider interquartile range (approximately 15-28 words)</li>
+<li><strong>Positive and Negative</strong>: Show similar variability, but less than neutral texts</li>
 </ul>
-<ol start="3">
-<li><strong>Valores atípicos</strong>:</li>
-</ol>
+</li>
+<li><p><strong>Outliers</strong>:</p>
 <ul>
-<li>Todos los sentimientos presentan valores atípicos en el extremo superior (textos excepcionalmente largos)</li>
-<li>El límite para considerar un texto como atípicamente largo parece estar alrededor de las 45-50 palabras</li>
+<li>All sentiments have outliers at the upper extreme (exceptionally long texts)</li>
+<li>The threshold for considering a text as unusually long appears to be around 45-50 words</li>
 </ul>
-<h3 id="Interpretaci%C3%B3n">Interpretación<a class="anchor-link" href="#Interpretaci%C3%B3n">¶</a></h3><ul>
-<li><p>Los textos neutrales tienden a ser más extensos, posiblemente porque contienen más detalles técnicos, explicaciones o información contextual sobre asuntos financieros.</p>
 </li>
-<li><p>Los textos negativos son generalmente más concisos, lo que podría indicar que las malas noticias o problemas se comunican de manera más directa y específica.</p>
+</ol>
+<h3 id="Interpretation">Interpretation<a class="anchor-link" href="#Interpretation">¶</a></h3><ul>
+<li><p>Neutral texts tend to be longer, possibly because they contain more technical details, explanations, or contextual information about financial matters.</p>
 </li>
-<li><p>La similitud entre las distribuciones de textos positivos y negativos sugiere que ambos tipos de sentimiento se expresan con niveles similares de concisión, pero los neutrales requieren más elaboración.</p>
+<li><p>Negative texts are generally more concise, which could indicate that bad news or problems are communicated more directly and specifically.</p>
+</li>
+<li><p>The similarity between positive and negative text distributions suggests that both sentiment types are expressed with similar levels of conciseness, but neutral content requires more elaboration.</p>
 </li>
 </ul>
-<h3 id="Implicaciones-para-el-Procesamiento">Implicaciones para el Procesamiento<a class="anchor-link" href="#Implicaciones-para-el-Procesamiento">¶</a></h3><ul>
-<li><p>La longitud de los textos, medida en número de palabras, podría ser un indicador útil para distinguir contenido neutral de contenido con carga emocional (positiva o negativa).</p>
+<h3 id="Processing-Implications">Processing Implications<a class="anchor-link" href="#Processing-Implications">¶</a></h3><ul>
+<li><p>Text length, measured in word count, could be a useful indicator to distinguish neutral content from emotional content (positive or negative).</p>
 </li>
-<li><p>El preprocesamiento deberá manejar adecuadamente tanto textos muy cortos (2-3 palabras) como excepcionalmente largos (más de 45 palabras), ya que ambos extremos están presentes en todos los sentimientos.</p>
+<li><p>Preprocessing will need to adequately handle both very short texts (2-3 words) and exceptionally long ones (over 45 words), as both extremes are present across all sentiments.</p>
 </li>
-<li><p>Para modelado, podríamos considerar la normalización por longitud o técnicas que tengan en cuenta estas diferencias, especialmente si queremos distinguir entre textos positivos y negativos, que son más similares entre sí en términos de longitud.</p>
+<li><p>For modeling, we might consider length normalization or techniques that account for these differences, especially if we want to distinguish between positive and negative texts, which are more similar to each other in terms of length.</p>
 </li>
 </ul>
 </div>
@@ -7958,11 +7957,11 @@ According to the Finnish-Russian Chamber of Commerce , all the major constructio
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 4.1 Text Preprocessing Function</span>
-<span class="k">def</span> <span class="nf">preprocess_text</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">preprocess_text</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Function to preprocess text data</span>
 <span class="sd">    """</span>
@@ -8007,7 +8006,7 @@ According to the Finnish-Russian Chamber of Commerce , all the major constructio
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 4.2 Apply Preprocessing</span>
@@ -8055,11 +8054,11 @@ Cleaned: last quarter componenta net sale doubled eurm eurm period year earlier 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 5.1 Word Frequency Analysis</span>
-<span class="k">def</span> <span class="nf">get_top_n_words</span><span class="p">(</span><span class="n">corpus</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">20</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_top_n_words</span><span class="p">(</span><span class="n">corpus</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">20</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Gets the top n words from a corpus of text</span>
 <span class="sd">    """</span>
@@ -8088,7 +8087,7 @@ Cleaned: last quarter componenta net sale doubled eurm eurm period year earlier 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 5.2 Visualize Top Words</span>
@@ -8140,58 +8139,58 @@ Cleaned: last quarter componenta net sale doubled eurm eurm period year earlier 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="An%C3%A1lisis-de-Frecuencia-de-Palabras-por-Categor%C3%ADa-de-Sentimiento">Análisis de Frecuencia de Palabras por Categoría de Sentimiento<a class="anchor-link" href="#An%C3%A1lisis-de-Frecuencia-de-Palabras-por-Categor%C3%ADa-de-Sentimiento">¶</a></h2><p>Los gráficos muestran las 20 palabras más frecuentes para cada categoría de sentimiento después del preprocesamiento (eliminación de stopwords, lematización, etc.).</p>
-<h3 id="T%C3%A9rminos-Comunes-en-Todas-las-Categor%C3%ADas">Términos Comunes en Todas las Categorías<a class="anchor-link" href="#T%C3%A9rminos-Comunes-en-Todas-las-Categor%C3%ADas">¶</a></h3><p>Es interesante observar que varias palabras aparecen con alta frecuencia en las tres categorías:</p>
+<h2 id="Word-Frequency-Analysis-by-Sentiment-Category">Word Frequency Analysis by Sentiment Category<a class="anchor-link" href="#Word-Frequency-Analysis-by-Sentiment-Category">¶</a></h2><p>The charts show the 20 most frequent words for each sentiment category after preprocessing (stopword removal, lemmatization, etc.).</p>
+<h3 id="Common-Terms-Across-Categories">Common Terms Across Categories<a class="anchor-link" href="#Common-Terms-Across-Categories">¶</a></h3><p>Interestingly, several words appear with high frequency across all three categories:</p>
 <ul>
 <li>"eur" (euro)</li>
-<li>"mln" (millón)</li>
-<li>"company" (compañía)</li>
-<li>"sale" (venta)</li>
-<li>"finnish" (finlandés, posiblemente por el enfoque en empresas finlandesas)</li>
-<li>"profit" (beneficio)</li>
+<li>"mln" (million)</li>
+<li>"company"</li>
+<li>"sale"</li>
+<li>"finnish" (possibly reflecting a focus on Finnish companies)</li>
+<li>"profit"</li>
 </ul>
-<p>Esto sugiere que el conjunto de datos contiene muchos textos financieros relacionados con empresas europeas (particularmente finlandesas) y sus resultados financieros.</p>
-<h3 id="Patrones-Distintivos-por-Sentimiento">Patrones Distintivos por Sentimiento<a class="anchor-link" href="#Patrones-Distintivos-por-Sentimiento">¶</a></h3><ol>
-<li><strong>Palabras Únicas en Textos Positivos</strong>:</li>
+<p>This suggests the dataset contains many financial texts related to European (particularly Finnish) companies and their financial results.</p>
+<h3 id="Distinctive-Patterns-by-Sentiment">Distinctive Patterns by Sentiment<a class="anchor-link" href="#Distinctive-Patterns-by-Sentiment">¶</a></h3><ol>
+<li><strong>Unique Words in Positive Texts</strong>:</li>
 </ol>
 <ul>
-<li>"increased" (aumentado)</li>
-<li>"rose" (subió)</li>
+<li>"increased"</li>
+<li>"rose"</li>
 </ul>
-<p>Estas palabras claramente indican crecimiento y tendencias favorables.</p>
+<p>These words clearly indicate growth and favorable trends.</p>
 <ol start="2">
-<li><strong>Palabras Únicas en Textos Negativos</strong>:</li>
+<li><strong>Unique Words in Negative Texts</strong>:</li>
 </ol>
 <ul>
-<li>"loss" (pérdida)</li>
-<li>"decreased" (disminuido)</li>
-<li>"compared" (comparado) - posiblemente en contextos negativos de comparación</li>
+<li>"loss"</li>
+<li>"decreased"</li>
+<li>"compared" - possibly in negative comparison contexts</li>
 </ul>
-<p>Estas palabras están asociadas con resultados financieros desfavorables.</p>
+<p>These words are associated with unfavorable financial results.</p>
 <ol start="3">
-<li><strong>Palabras Únicas en Textos Neutrales</strong>:</li>
+<li><strong>Unique Words in Neutral Texts</strong>:</li>
 </ol>
 <ul>
-<li>"service" (servicio)</li>
-<li>"business" (negocio)</li>
-<li>"market" (mercado)</li>
-<li>"group" (grupo)</li>
+<li>"service"</li>
+<li>"business"</li>
+<li>"market"</li>
+<li>"group"</li>
 </ul>
-<p>Estos términos tienden a ser más descriptivos y menos cargados emocionalmente.</p>
-<h3 id="Implicaciones-para-el-Modelo">Implicaciones para el Modelo<a class="anchor-link" href="#Implicaciones-para-el-Modelo">¶</a></h3><ol>
-<li><p><strong>Importancia del contexto</strong>: Dado que muchas palabras aparecen en todas las categorías, el modelo necesitará aprender a interpretar estas palabras en su contexto adecuado. Por ejemplo, "profit" podría aparecer en "profit increased" (positivo) o "profit decreased" (negativo).</p>
+<p>These terms tend to be more descriptive and less emotionally charged.</p>
+<h3 id="Model-Implications">Model Implications<a class="anchor-link" href="#Model-Implications">¶</a></h3><ol>
+<li><p><strong>Context importance</strong>: Since many words appear across all categories, the model will need to learn to interpret these words in their proper context. For example, "profit" could appear in "profit increased" (positive) or "profit decreased" (negative).</p>
 </li>
-<li><p><strong>Términos discriminativos</strong>: Palabras como "loss", "increased" y "decreased" probablemente serán características importantes para el modelo al diferenciar entre sentimientos.</p>
+<li><p><strong>Discriminative terms</strong>: Words like "loss", "increased" and "decreased" will likely be important features for the model when differentiating between sentiments.</p>
 </li>
-<li><p><strong>Relevancia de n-gramas</strong>: La presencia de palabras similares en diferentes categorías sugiere que los bigramas o trigramas (por ejemplo, "profit increased" vs. "profit decreased") podrían ser más informativos que palabras individuales.</p>
+<li><p><strong>N-gram relevance</strong>: The presence of similar words in different categories suggests that bigrams or trigrams (e.g., "profit increased" vs. "profit decreased") might be more informative than individual words.</p>
 </li>
-<li><p><strong>Especialización del dominio</strong>: La alta frecuencia de términos financieros específicos ("mln", "eur", "quarter") confirma que estamos trabajando con un conjunto de datos altamente especializado en el dominio financiero.</p>
+<li><p><strong>Domain specialization</strong>: The high frequency of specific financial terms ("mln", "eur", "quarter") confirms we're working with a highly specialized dataset in the financial domain.</p>
 </li>
 </ol>
-<h3 id="Posibles-Mejoras">Posibles Mejoras<a class="anchor-link" href="#Posibles-Mejoras">¶</a></h3><ul>
-<li><strong>Incorporar n-gramas</strong>: Añadir bigramas y trigramas en nuestra vectorización para capturar mejor el contexto.</li>
-<li><strong>Análisis de colocaciones</strong>: Examinar qué palabras tienden a aparecer juntas en cada categoría de sentimiento.</li>
-<li><strong>Ponderación personalizada</strong>: Considerar la asignación de pesos específicos a términos discriminativos clave durante la vectorización.</li>
+<h3 id="Potential-Improvements">Potential Improvements<a class="anchor-link" href="#Potential-Improvements">¶</a></h3><ul>
+<li><strong>Incorporate n-grams</strong>: Add bigrams and trigrams in our vectorization to better capture context.</li>
+<li><strong>Collocation analysis</strong>: Examine which words tend to appear together in each sentiment category.</li>
+<li><strong>Custom weighting</strong>: Consider assigning specific weights to key discriminative terms during vectorization.</li>
 </ul>
 </div>
 </div>
@@ -8201,7 +8200,7 @@ Cleaned: last quarter componenta net sale doubled eurm eurm period year earlier 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 6. Feature Engineering and Model Training</span>
@@ -8251,11 +8250,11 @@ Testing features shape: (1169, 5000)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 7.1 Model Evaluation Function</span>
-<span class="k">def</span> <span class="nf">evaluate_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="n">model_name</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">evaluate_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="n">model_name</span><span class="p">):</span>
     <span class="c1"># Train model</span>
     <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
     
@@ -8296,7 +8295,7 @@ Testing features shape: (1169, 5000)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 7.2 Model 1: Multinomial Naive Bayes</span>
@@ -8353,99 +8352,99 @@ weighted avg       0.68      0.68      0.63      1169
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="An%C3%A1lisis-del-Modelo-Naive-Bayes">Análisis del Modelo Naive Bayes<a class="anchor-link" href="#An%C3%A1lisis-del-Modelo-Naive-Bayes">¶</a></h2><p>La matriz de confusión y las métricas de evaluación de Naive Bayes revelan varios aspectos importantes sobre el rendimiento del modelo:</p>
-<h3 id="An%C3%A1lisis-del-Rendimiento">Análisis del Rendimiento<a class="anchor-link" href="#An%C3%A1lisis-del-Rendimiento">¶</a></h3><ol>
-<li><strong>Precisión general (Accuracy)</strong>: 68.35%</li>
+<h2 id="Naive-Bayes-Model-Analysis">Naive Bayes Model Analysis<a class="anchor-link" href="#Naive-Bayes-Model-Analysis">¶</a></h2><p>The confusion matrix and evaluation metrics for Naive Bayes reveal several important aspects about the model's performance:</p>
+<h3 id="Performance-Analysis">Performance Analysis<a class="anchor-link" href="#Performance-Analysis">¶</a></h3><ol>
+<li><strong>Overall Accuracy</strong>: 68.35%</li>
 </ol>
 <ul>
-<li>Un rendimiento moderado que supera la clasificación aleatoria, pero con margen significativo de mejora.</li>
+<li>Moderate performance that exceeds random classification, but with significant room for improvement.</li>
 </ul>
 <ol start="2">
-<li><strong>Rendimiento por clase</strong>:</li>
+<li><strong>Performance by class</strong>:</li>
 </ol>
 <ul>
-<li><p><strong>Clase Negativa (0)</strong>:</p>
+<li><p><strong>Negative Class (0)</strong>:</p>
 <ul>
-<li>Precisión: 64% - Cuando predice negativo, acierta el 64% de las veces</li>
-<li>Recall: 4% - Sólo identifica el 4% de todos los textos negativos reales</li>
-<li>F1-score: 8% - Rendimiento extremadamente bajo para esta clase</li>
+<li>Precision: 64% - When predicting negative, it's correct 64% of the time</li>
+<li>Recall: 4% - Only identifies 4% of all actual negative texts</li>
+<li>F1-score: 8% - Extremely low performance for this class</li>
 </ul>
 </li>
-<li><p><strong>Clase Neutral (1)</strong>:</p>
+<li><p><strong>Neutral Class (1)</strong>:</p>
 <ul>
-<li>Precisión: 67% - Precisión moderada para predicciones neutrales</li>
-<li>Recall: 96% - Excelente capacidad para identificar textos neutrales</li>
-<li>F1-score: 79% - Buen rendimiento general para esta clase</li>
+<li>Precision: 67% - Moderate precision for neutral predictions</li>
+<li>Recall: 96% - Excellent ability to identify neutral texts</li>
+<li>F1-score: 79% - Good overall performance for this class</li>
 </ul>
 </li>
-<li><p><strong>Clase Positiva (2)</strong>:</p>
+<li><p><strong>Positive Class (2)</strong>:</p>
 <ul>
-<li>Precisión: 73% - La mejor precisión entre las tres clases</li>
-<li>Recall: 52% - Identifica poco más de la mitad de los textos positivos</li>
-<li>F1-score: 61% - Rendimiento moderado</li>
+<li>Precision: 73% - Best precision among the three classes</li>
+<li>Recall: 52% - Identifies just over half of positive texts</li>
+<li>F1-score: 61% - Moderate performance</li>
 </ul>
 </li>
 </ul>
 <ol start="3">
-<li><strong>Observaciones clave de la matriz de confusión</strong>:</li>
+<li><strong>Key observations from confusion matrix</strong>:</li>
 </ol>
 <ul>
-<li>El modelo clasifica la gran mayoría de los textos como neutrales (893 de 1169)</li>
-<li>Sólo predice la clase negativa 11 veces (menos del 1% de las predicciones)</li>
-<li>La mayor confusión ocurre entre textos positivos clasificados como neutrales (176 casos)</li>
+<li>The model classifies the vast majority of texts as neutral (893 of 1169)</li>
+<li>It only predicts the negative class 11 times (less than 1% of predictions)</li>
+<li>The biggest confusion occurs with positive texts classified as neutral (176 cases)</li>
 </ul>
-<h3 id="Problemas-Identificados">Problemas Identificados<a class="anchor-link" href="#Problemas-Identificados">¶</a></h3><ol>
-<li><p><strong>Sesgo extremo hacia la clase neutral</strong>: El modelo tiene una fuerte tendencia a clasificar textos como neutrales, lo que explica el alto recall (96%) pero precisión moderada (67%) para esta clase.</p>
+<h3 id="Identified-Problems">Identified Problems<a class="anchor-link" href="#Identified-Problems">¶</a></h3><ol>
+<li><p><strong>Extreme bias toward neutral class</strong>: The model has a strong tendency to classify texts as neutral, explaining the high recall (96%) but moderate precision (67%) for this class.</p>
 </li>
-<li><p><strong>Subrepresentación de la clase negativa</strong>: El modelo prácticamente ignora la clase negativa, clasificando solo 7 de 172 textos negativos correctamente.</p>
+<li><p><strong>Underrepresentation of negative class</strong>: The model practically ignores the negative class, correctly classifying only 7 of 172 negative texts.</p>
 </li>
-<li><p><strong>Desbalance en el rendimiento</strong>: Hay una diferencia dramática en el recall entre clases (4% vs 96% vs 52%).</p>
+<li><p><strong>Performance imbalance</strong>: There's a dramatic difference in recall between classes (4% vs 96% vs 52%).</p>
 </li>
 </ol>
-<h3 id="Posibles-Mejoras">Posibles Mejoras<a class="anchor-link" href="#Posibles-Mejoras">¶</a></h3><ol>
-<li><strong>Ajuste de la probabilidad previa (class_prior)</strong>:</li>
+<h3 id="Possible-Improvements">Possible Improvements<a class="anchor-link" href="#Possible-Improvements">¶</a></h3><ol>
+<li><strong>Prior probability adjustment (class_prior)</strong>:</li>
 </ol>
 <ul>
-<li>Modificar las probabilidades a priori para contrarrestar el desbalance de clases</li>
-<li>Por ejemplo: <code>MultinomialNB(class_prior=[0.33, 0.33, 0.33])</code> para asignar igual probabilidad a cada clase</li>
+<li>Modify prior probabilities to counteract class imbalance</li>
+<li>For example: <code>MultinomialNB(class_prior=[0.33, 0.33, 0.33])</code> to assign equal probability to each class</li>
 </ul>
 <ol start="2">
-<li><strong>Ajuste del umbral de decisión</strong>:</li>
+<li><strong>Decision threshold adjustment</strong>:</li>
 </ol>
 <ul>
-<li>Implementar un clasificador con umbrales personalizados basados en las probabilidades de Naive Bayes</li>
-<li>Disminuir el umbral para la clase negativa para aumentar su recall</li>
+<li>Implement a classifier with custom thresholds based on Naive Bayes probabilities</li>
+<li>Lower the threshold for the negative class to increase its recall</li>
 </ul>
 <ol start="3">
-<li><strong>Técnicas de remuestreo</strong>:</li>
+<li><strong>Resampling techniques</strong>:</li>
 </ol>
 <ul>
-<li>Sobremuestreo de la clase minoritaria (negativa) usando técnicas como SMOTE</li>
-<li>Submuestreo de la clase mayoritaria (neutral)</li>
+<li>Oversampling the minority class (negative) using techniques like SMOTE</li>
+<li>Undersampling the majority class (neutral)</li>
 </ul>
 <ol start="4">
-<li><strong>Ingeniería de características</strong>:</li>
+<li><strong>Feature engineering</strong>:</li>
 </ol>
 <ul>
-<li>Incorporar bigramas y trigramas para capturar mejor el contexto (por ejemplo, "no good" vs "good")</li>
-<li>Experimentar con esquemas de pesaje como TF-IDF con diferentes parámetros</li>
-<li>Añadir características basadas en léxicos de sentimiento financiero</li>
+<li>Incorporate bigrams and trigrams to better capture context (e.g., "not good" vs "good")</li>
+<li>Experiment with weighting schemes like TF-IDF with different parameters</li>
+<li>Add features based on financial sentiment lexicons</li>
 </ul>
 <ol start="5">
-<li><strong>Considerar modelos alternativos</strong>:</li>
+<li><strong>Consider alternative models</strong>:</li>
 </ol>
 <ul>
-<li>Aunque Naive Bayes es eficiente, otros modelos como SVM o Random Forest podrían manejar mejor el desbalance</li>
-<li>Ensemble de múltiples clasificadores para mejorar el rendimiento general</li>
+<li>While Naive Bayes is efficient, other models like SVM or Random Forest might better handle the imbalance</li>
+<li>Ensemble of multiple classifiers to improve overall performance</li>
 </ul>
 <ol start="6">
-<li><strong>Técnicas específicas para Naive Bayes</strong>:</li>
+<li><strong>Naive Bayes-specific techniques</strong>:</li>
 </ol>
 <ul>
-<li>Ajustar el parámetro alpha (suavizado de Laplace) para encontrar el valor óptimo</li>
-<li>Probar diferentes variantes de Naive Bayes (Bernoulli NB en lugar de Multinomial)</li>
+<li>Adjust the alpha parameter (Laplace smoothing) to find the optimal value</li>
+<li>Try different Naive Bayes variants (Bernoulli NB instead of Multinomial)</li>
 </ul>
-<p>El principal desafío es mejorar la detección de la clase negativa sin sacrificar demasiado el rendimiento en las otras clases. Un enfoque combinado de ajuste de parámetros y reequilibrio de clases probablemente dará los mejores resultados.</p>
+<p>The main challenge is improving the detection of the negative class without sacrificing too much performance in the other classes. A combined approach of parameter tuning and class rebalancing will likely yield the best results.</p>
 </div>
 </div>
 </div>
@@ -8454,7 +8453,7 @@ weighted avg       0.68      0.68      0.63      1169
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 7.3 Model 2: Logistic Regression</span>
@@ -8511,87 +8510,87 @@ weighted avg       0.67      0.69      0.66      1169
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="An%C3%A1lisis-del-Modelo-de-Regresi%C3%B3n-Log%C3%ADstica">Análisis del Modelo de Regresión Logística<a class="anchor-link" href="#An%C3%A1lisis-del-Modelo-de-Regresi%C3%B3n-Log%C3%ADstica">¶</a></h2><p>El modelo de regresión logística muestra una mejora respecto al Naive Bayes, con un rendimiento general más equilibrado entre las clases. Vamos a analizar detalladamente los resultados:</p>
-<h3 id="Evaluaci%C3%B3n-General">Evaluación General<a class="anchor-link" href="#Evaluaci%C3%B3n-General">¶</a></h3><ol>
-<li><strong>Precisión general (Accuracy)</strong>: 69.29%</li>
+<h2 id="Logistic-Regression-Model-Analysis">Logistic Regression Model Analysis<a class="anchor-link" href="#Logistic-Regression-Model-Analysis">¶</a></h2><p>The logistic regression model shows improvement over Naive Bayes, with more balanced performance across classes. Let's analyze the results in detail:</p>
+<h3 id="Overall-Evaluation">Overall Evaluation<a class="anchor-link" href="#Overall-Evaluation">¶</a></h3><ol>
+<li><strong>Overall Accuracy</strong>: 69.29%</li>
 </ol>
 <ul>
-<li>Ligeramente superior al modelo Naive Bayes (68.35%)</li>
+<li>Slightly higher than Naive Bayes (68.35%)</li>
 </ul>
 <ol start="2">
-<li><strong>Rendimiento por clase</strong>:</li>
+<li><strong>Performance by class</strong>:</li>
 </ol>
 <ul>
-<li><p><strong>Clase Negativa (0)</strong>:</p>
+<li><p><strong>Negative Class (0)</strong>:</p>
 <ul>
-<li>Precisión: 38% - Baja, pero mejor que Naive Bayes (64%)</li>
-<li>Recall: 13% - Mejora significativa respecto al 4% de Naive Bayes</li>
-<li>F1-score: 20% - Mejor equilibrio que el modelo anterior (8%)</li>
+<li>Precision: 38% - Lower than Naive Bayes (64%)</li>
+<li>Recall: 13% - Significant improvement over Naive Bayes (4%)</li>
+<li>F1-score: 20% - Better balance than the previous model (8%)</li>
 </ul>
 </li>
-<li><p><strong>Clase Neutral (1)</strong>:</p>
+<li><p><strong>Neutral Class (1)</strong>:</p>
 <ul>
-<li>Precisión: 69% - Ligeramente mejor que Naive Bayes</li>
-<li>Recall: 89% - Bueno, aunque menor que Naive Bayes (96%)</li>
-<li>F1-score: 78% - Similar al modelo anterior</li>
+<li>Precision: 69% - Slightly better than Naive Bayes</li>
+<li>Recall: 89% - Good, though lower than Naive Bayes (96%)</li>
+<li>F1-score: 78% - Similar to the previous model</li>
 </ul>
 </li>
-<li><p><strong>Clase Positiva (2)</strong>:</p>
+<li><p><strong>Positive Class (2)</strong>:</p>
 <ul>
-<li>Precisión: 76% - Ligeramente superior al modelo anterior</li>
-<li>Recall: 62% - Mejora significativa respecto a Naive Bayes (52%)</li>
-<li>F1-score: 68% - Mejor que el modelo anterior (61%)</li>
+<li>Precision: 76% - Slightly higher than the previous model</li>
+<li>Recall: 62% - Significant improvement over Naive Bayes (52%)</li>
+<li>F1-score: 68% - Better than the previous model (61%)</li>
 </ul>
 </li>
 </ul>
 <ol start="3">
-<li><strong>Análisis de la matriz de confusión</strong>:</li>
+<li><strong>Confusion matrix analysis</strong>:</li>
 </ol>
 <ul>
-<li>Ya no existe un sesgo tan extremo hacia la clase neutral (804 predicciones vs 893 en NB)</li>
-<li>Mayor equilibrio en las predicciones negativas (61 vs 11 en NB)</li>
-<li>Mejoró considerablemente la identificación de textos positivos (231 correctos vs 194 en NB)</li>
+<li>Less extreme bias toward the neutral class (804 predictions vs 893 in NB)</li>
+<li>Better balance in negative predictions (61 vs 11 in NB)</li>
+<li>Improved identification of positive texts (231 correct vs 194 in NB)</li>
 </ul>
-<h3 id="Mejoras-Observadas">Mejoras Observadas<a class="anchor-link" href="#Mejoras-Observadas">¶</a></h3><ol>
-<li><p><strong>Mejor balance entre clases</strong>: La regresión logística distribuye mejor sus predicciones entre las tres clases, aunque sigue existiendo una tendencia hacia la clase mayoritaria (neutral).</p>
+<h3 id="Observed-Improvements">Observed Improvements<a class="anchor-link" href="#Observed-Improvements">¶</a></h3><ol>
+<li><p><strong>Better class balance</strong>: Logistic regression distributes its predictions better among the three classes, though still showing a tendency toward the majority class (neutral).</p>
 </li>
-<li><p><strong>Mejora en la clase negativa</strong>: Aunque sigue siendo el punto más débil, la detección de sentimientos negativos mejoró significativamente (del 4% al 13% en recall).</p>
+<li><p><strong>Improvement in negative class</strong>: Though still the weakest point, detection of negative sentiment improved significantly (from 4% to 13% recall).</p>
 </li>
-<li><p><strong>Mayor precisión global</strong>: Tanto la precisión general como las métricas específicas por clase mejoraron, especialmente el F1-score ponderado (0.66 vs 0.63).</p>
+<li><p><strong>Higher overall precision</strong>: Both overall accuracy and class-specific metrics improved, especially the weighted F1-score (0.66 vs 0.63).</p>
 </li>
 </ol>
-<h3 id="Posibles-Mejoras-Adicionales">Posibles Mejoras Adicionales<a class="anchor-link" href="#Posibles-Mejoras-Adicionales">¶</a></h3><ol>
-<li><strong>Ajuste de umbrales de decisión</strong>:</li>
+<h3 id="Additional-Potential-Improvements">Additional Potential Improvements<a class="anchor-link" href="#Additional-Potential-Improvements">¶</a></h3><ol>
+<li><strong>Decision threshold adjustment</strong>:</li>
 </ol>
 <ul>
-<li>Calibrar las probabilidades de la regresión logística para mejorar aún más el balance entre clases</li>
-<li>Implementar un esquema de decisión personalizado que favorezca la clase minoritaria (negativa)</li>
+<li>Calibrate the logistic regression probabilities to further improve class balance</li>
+<li>Implement a custom decision scheme that favors the minority class (negative)</li>
 </ul>
 <ol start="2">
-<li><strong>Ingeniería de características avanzada</strong>:</li>
+<li><strong>Advanced feature engineering</strong>:</li>
 </ol>
 <ul>
-<li>Incorporar características específicas para detectar sentimiento negativo</li>
-<li>Explorar n-gramas más largos para capturar mejor expresiones negativas</li>
-<li>Incluir características basadas en léxicos financieros de sentimiento</li>
+<li>Incorporate specific features for detecting negative sentiment</li>
+<li>Explore longer n-grams to better capture negative expressions</li>
+<li>Include features based on financial sentiment lexicons</li>
 </ul>
 <ol start="3">
-<li><strong>Ajuste de hiperparámetros</strong>:</li>
+<li><strong>Hyperparameter tuning</strong>:</li>
 </ol>
 <ul>
-<li>Optimizar el parámetro de regularización C</li>
-<li>Probar diferentes solvers (liblinear, saga, etc.)</li>
-<li>Implementar ponderación de clases más agresiva con <code>class_weight='balanced'</code> o valores personalizados</li>
+<li>Optimize the regularization parameter C</li>
+<li>Try different solvers (liblinear, saga, etc.)</li>
+<li>Implement more aggressive class weighting with <code>class_weight='balanced'</code> or custom values</li>
 </ul>
 <ol start="4">
-<li><strong>Técnicas de remuestreo</strong>:</li>
+<li><strong>Resampling techniques</strong>:</li>
 </ol>
 <ul>
-<li>Aplicar técnicas como SMOTE o ADASYN específicamente para la clase minoritaria</li>
-<li>Considerar submuestreo de la clase mayoritaria combinado con sobremuestreo de la minoritaria</li>
+<li>Apply techniques like SMOTE or ADASYN specifically for the minority class</li>
+<li>Consider undersampling the majority class combined with oversampling the minority class</li>
 </ul>
-<h3 id="Conclusi%C3%B3n">Conclusión<a class="anchor-link" href="#Conclusi%C3%B3n">¶</a></h3><p>La regresión logística muestra un mejor equilibrio general que Naive Bayes, especialmente en su capacidad para detectar la clase minoritaria (textos negativos). Aunque todavía hay margen de mejora, este modelo representa un avance significativo en términos de métricas equilibradas entre clases.</p>
-<p>Sería recomendable optimizar este modelo mediante técnicas de calibración y ajuste de hiperparámetros antes de explorar modelos más complejos como Random Forest o SVM.</p>
+<h3 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">¶</a></h3><p>Logistic regression shows better overall balance than Naive Bayes, especially in its ability to detect the minority class (negative texts). While there's still room for improvement, this model represents a significant advancement in terms of balanced metrics across classes.</p>
+<p>It would be advisable to optimize this model through calibration techniques and hyperparameter tuning before exploring more complex models like Random Forest or SVM.</p>
 </div>
 </div>
 </div>
@@ -8600,7 +8599,7 @@ weighted avg       0.67      0.69      0.66      1169
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 7.4 Model 3: Random Forest</span>
@@ -8657,94 +8656,94 @@ weighted avg       0.62      0.63      0.62      1169
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="An%C3%A1lisis-del-Modelo-Random-Forest">Análisis del Modelo Random Forest<a class="anchor-link" href="#An%C3%A1lisis-del-Modelo-Random-Forest">¶</a></h2><p>El modelo Random Forest muestra un comportamiento diferente a los modelos anteriores, con algunas ventajas y desventajas notables:</p>
-<h3 id="Evaluaci%C3%B3n-General">Evaluación General<a class="anchor-link" href="#Evaluaci%C3%B3n-General">¶</a></h3><ol>
-<li><strong>Precisión general (Accuracy)</strong>: 63.30%</li>
+<h2 id="Random-Forest-Model-Analysis">Random Forest Model Analysis<a class="anchor-link" href="#Random-Forest-Model-Analysis">¶</a></h2><p>The Random Forest model shows different behavior compared to previous models, with notable advantages and disadvantages:</p>
+<h3 id="Overall-Evaluation">Overall Evaluation<a class="anchor-link" href="#Overall-Evaluation">¶</a></h3><ol>
+<li><strong>Overall Accuracy</strong>: 63.30%</li>
 </ol>
 <ul>
-<li>Inferior a los modelos anteriores (NB: 68.35%, LR: 69.29%)</li>
+<li>Lower than previous models (NB: 68.35%, LR: 69.29%)</li>
 </ul>
 <ol start="2">
-<li><strong>Rendimiento por clase</strong>:</li>
+<li><strong>Performance by class</strong>:</li>
 </ol>
 <ul>
-<li><p><strong>Clase Negativa (0)</strong>:</p>
+<li><p><strong>Negative Class (0)</strong>:</p>
 <ul>
-<li>Precisión: 17% - Significativamente menor que Naive Bayes (64%) y Regresión Logística (38%)</li>
-<li>Recall: 11% - Mejor que Naive Bayes (4%) pero inferior a Regresión Logística (13%)</li>
-<li>F1-score: 13% - Peor que Regresión Logística (20%) pero mejor que Naive Bayes (8%)</li>
+<li>Precision: 17% - Significantly lower than Naive Bayes (64%) and Logistic Regression (38%)</li>
+<li>Recall: 11% - Better than Naive Bayes (4%) but inferior to Logistic Regression (13%)</li>
+<li>F1-score: 13% - Worse than Logistic Regression (20%) but better than Naive Bayes (8%)</li>
 </ul>
 </li>
-<li><p><strong>Clase Neutral (1)</strong>:</p>
+<li><p><strong>Neutral Class (1)</strong>:</p>
 <ul>
-<li>Precisión: 66% - La más baja de los tres modelos</li>
-<li>Recall: 80% - Inferior a Naive Bayes (96%) y Regresión Logística (89%)</li>
-<li>F1-score: 72% - El más bajo de los tres modelos para esta clase</li>
+<li>Precision: 66% - Lowest of the three models</li>
+<li>Recall: 80% - Lower than Naive Bayes (96%) and Logistic Regression (89%)</li>
+<li>F1-score: 72% - Lowest of all three models for this class</li>
 </ul>
 </li>
-<li><p><strong>Clase Positiva (2)</strong>:</p>
+<li><p><strong>Positive Class (2)</strong>:</p>
 <ul>
-<li>Precisión: 75% - Comparable a Regresión Logística (76%)</li>
-<li>Recall: 59% - Entre Naive Bayes (52%) y Regresión Logística (62%)</li>
-<li>F1-score: 66% - Ligeramente inferior a Regresión Logística (68%)</li>
+<li>Precision: 75% - Comparable to Logistic Regression (76%)</li>
+<li>Recall: 59% - Between Naive Bayes (52%) and Logistic Regression (62%)</li>
+<li>F1-score: 66% - Slightly lower than Logistic Regression (68%)</li>
 </ul>
 </li>
 </ul>
 <ol start="3">
-<li><strong>Análisis de la matriz de confusión</strong>:</li>
+<li><strong>Confusion matrix analysis</strong>:</li>
 </ol>
 <ul>
-<li>Mayor número de predicciones negativas (114 vs 61 en LR y 11 en NB)</li>
-<li>Menor tendencia a predecir la clase neutral (763 vs 804 en LR y 893 en NB)</li>
-<li>Confusión significativa entre clases neutral y negativa (84 textos neutrales clasificados como negativos)</li>
+<li>Higher number of negative predictions (114 vs 61 in LR and 11 in NB)</li>
+<li>Less tendency to predict the neutral class (763 vs 804 in LR and 893 in NB)</li>
+<li>Significant confusion between neutral and negative classes (84 neutral texts classified as negative)</li>
 </ul>
-<h3 id="Observaciones-Clave">Observaciones Clave<a class="anchor-link" href="#Observaciones-Clave">¶</a></h3><ol>
-<li><p><strong>Mayor división de clases</strong>: Random Forest intenta equilibrar más las predicciones entre las tres clases, lo que reduce su precisión general pero potencialmente ofrece una visión más matizada.</p>
+<h3 id="Key-Observations">Key Observations<a class="anchor-link" href="#Key-Observations">¶</a></h3><ol>
+<li><p><strong>More class distribution</strong>: Random Forest attempts to balance predictions more across the three classes, which reduces its overall accuracy but potentially offers a more nuanced view.</p>
 </li>
-<li><p><strong>Debilidad en precisión para clase negativa</strong>: Aunque identifica más textos como negativos, muchos son falsos positivos (84 neutrales + 11 positivos), lo que explica la baja precisión (17%).</p>
+<li><p><strong>Weakness in precision for negative class</strong>: While it identifies more texts as negative, many are false positives (84 neutral + 11 positive), explaining the low precision (17%).</p>
 </li>
-<li><p><strong>Comportamiento más conservador en la clase neutral</strong>: Menor tendencia a predecir neutral en comparación con los otros modelos, lo que reduce el recall pero potencialmente ofrece mayor especificidad.</p>
-</li>
-</ol>
-<h3 id="%C2%BFPor-qu%C3%A9-el-rendimiento-es-inferior?">¿Por qué el rendimiento es inferior?<a class="anchor-link" href="#%C2%BFPor-qu%C3%A9-el-rendimiento-es-inferior?">¶</a></h3><ol>
-<li><p><strong>Posible sobreajuste</strong>: Random Forest puede estar sobreajustándose a características específicas del conjunto de entrenamiento que no generalizan bien.</p>
-</li>
-<li><p><strong>Características ruidosas</strong>: El modelo podría estar dando importancia a palabras o patrones que no son verdaderamente discriminativos para el sentimiento.</p>
-</li>
-<li><p><strong>Desbalance de clases</strong>: A pesar de su capacidad para manejar datos desbalanceados, este Random Forest parece afectado por el desbalance, especialmente en la clase negativa.</p>
+<li><p><strong>More conservative with neutral class</strong>: Less tendency to predict neutral compared to other models, which reduces recall but potentially offers higher specificity.</p>
 </li>
 </ol>
-<h3 id="Posibles-Mejoras">Posibles Mejoras<a class="anchor-link" href="#Posibles-Mejoras">¶</a></h3><ol>
-<li><strong>Ajuste de hiperparámetros</strong>:</li>
+<h3 id="Why-is-Performance-Lower?">Why is Performance Lower?<a class="anchor-link" href="#Why-is-Performance-Lower?">¶</a></h3><ol>
+<li><p><strong>Possible overfitting</strong>: Random Forest may be overfitting to specific features of the training set that don't generalize well.</p>
+</li>
+<li><p><strong>Noisy features</strong>: The model might be giving importance to words or patterns that aren't truly discriminative for sentiment.</p>
+</li>
+<li><p><strong>Class imbalance</strong>: Despite its ability to handle imbalanced data, this Random Forest appears affected by the imbalance, especially in the negative class.</p>
+</li>
+</ol>
+<h3 id="Potential-Improvements">Potential Improvements<a class="anchor-link" href="#Potential-Improvements">¶</a></h3><ol>
+<li><strong>Hyperparameter tuning</strong>:</li>
 </ol>
 <ul>
-<li>Modificar <code>max_depth</code> para controlar el sobreajuste</li>
-<li>Aumentar <code>n_estimators</code> para mejorar la generalización</li>
-<li>Ajustar <code>min_samples_leaf</code> para evitar divisiones demasiado específicas</li>
+<li>Modify <code>max_depth</code> to control overfitting</li>
+<li>Increase <code>n_estimators</code> to improve generalization</li>
+<li>Adjust <code>min_samples_leaf</code> to prevent overly specific splits</li>
 </ul>
 <ol start="2">
-<li><strong>Ponderación de clases</strong>:</li>
+<li><strong>Class weighting</strong>:</li>
 </ol>
 <ul>
-<li>Implementar <code>class_weight='balanced'</code> o pesos personalizados</li>
-<li>Experimentar con técnicas de submuestreo integradas en el algoritmo</li>
+<li>Implement <code>class_weight='balanced'</code> or custom weights</li>
+<li>Experiment with built-in undersampling techniques</li>
 </ul>
 <ol start="3">
-<li><strong>Selección de características</strong>:</li>
+<li><strong>Feature selection</strong>:</li>
 </ol>
 <ul>
-<li>Utilizar la importancia de características de Random Forest para eliminar características ruidosas</li>
-<li>Implementar selección de características recursiva</li>
+<li>Use Random Forest feature importance to eliminate noisy features</li>
+<li>Implement recursive feature elimination</li>
 </ul>
 <ol start="4">
-<li><strong>Ensemble con otros modelos</strong>:</li>
+<li><strong>Ensemble with other models</strong>:</li>
 </ol>
 <ul>
-<li>Combinar las predicciones de Random Forest con Regresión Logística mediante votación o stacking</li>
-<li>Usar Random Forest para generar características para un modelo final de Regresión Logística</li>
+<li>Combine Random Forest predictions with Logistic Regression through voting or stacking</li>
+<li>Use Random Forest to generate features for a final Logistic Regression model</li>
 </ul>
-<h3 id="Conclusi%C3%B3n">Conclusión<a class="anchor-link" href="#Conclusi%C3%B3n">¶</a></h3><p>Random Forest muestra un comportamiento interesante al intentar equilibrar más las predicciones entre clases, pero su rendimiento general es inferior a Regresión Logística. Sin embargo, podría ser valioso como parte de un ensemble de modelos o después de un ajuste más exhaustivo de hiperparámetros.</p>
-<p>Basado en los resultados actuales, la Regresión Logística sigue siendo el modelo más efectivo entre los tres evaluados, ofreciendo el mejor equilibrio entre precisión general y rendimiento para cada clase.</p>
+<h3 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">¶</a></h3><p>Random Forest shows interesting behavior in attempting to balance predictions more across classes, but its overall performance is inferior to Logistic Regression. However, it could be valuable as part of a model ensemble or after more extensive hyperparameter tuning.</p>
+<p>Based on current results, Logistic Regression remains the most effective model among the three evaluated, offering the best balance between overall accuracy and performance for each class.</p>
 </div>
 </div>
 </div>
@@ -8753,7 +8752,7 @@ weighted avg       0.62      0.63      0.62      1169
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 8. Model Comparison</span>
@@ -8798,7 +8797,7 @@ weighted avg       0.62      0.63      0.62      1169
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 9. Feature Importance (for the best model)</span>
@@ -8857,11 +8856,11 @@ weighted avg       0.62      0.63      0.62      1169
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 10.1 Sample Prediction Function</span>
-<span class="k">def</span> <span class="nf">predict_sentiment</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">vectorizer</span><span class="p">,</span> <span class="n">sentiment_map_inv</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">predict_sentiment</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">vectorizer</span><span class="p">,</span> <span class="n">sentiment_map_inv</span><span class="p">):</span>
     <span class="c1"># Preprocess the text</span>
     <span class="n">cleaned</span> <span class="o">=</span> <span class="n">preprocess_text</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
     
@@ -8900,7 +8899,7 @@ weighted avg       0.62      0.63      0.62      1169
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 10.2 Sample Predictions</span>
@@ -8965,51 +8964,51 @@ Class Probabilities:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="An%C3%A1lisis-de-Caracter%C3%ADsticas-Importantes-y-Predicciones">Análisis de Características Importantes y Predicciones<a class="anchor-link" href="#An%C3%A1lisis-de-Caracter%C3%ADsticas-Importantes-y-Predicciones">¶</a></h2><h3 id="Caracter%C3%ADsticas-M%C3%A1s-Influyentes-(Regresi%C3%B3n-Log%C3%ADstica)">Características Más Influyentes (Regresión Logística)<a class="anchor-link" href="#Caracter%C3%ADsticas-M%C3%A1s-Influyentes-(Regresi%C3%B3n-Log%C3%ADstica)">¶</a></h3><p>El gráfico de importancia de características revela patrones significativos sobre qué palabras tienen mayor impacto en la clasificación de sentimiento:</p>
+<h2 id="Feature-Importance-and-Prediction-Analysis">Feature Importance and Prediction Analysis<a class="anchor-link" href="#Feature-Importance-and-Prediction-Analysis">¶</a></h2><h3 id="Most-Influential-Features-(Logistic-Regression)">Most Influential Features (Logistic Regression)<a class="anchor-link" href="#Most-Influential-Features-(Logistic-Regression)">¶</a></h3><p>The feature importance chart reveals significant patterns about which words have the greatest impact on sentiment classification:</p>
 <ol>
-<li><p><strong>Indicadores de tendencia</strong>:</p>
+<li><p><strong>Trend indicators</strong>:</p>
 <ul>
-<li>Palabras como "long", "increased", "grew" y "expands" tienen alta importancia, sugiriendo que términos relacionados con crecimiento son fuertes predictores de sentimiento positivo.</li>
-<li>"Lower" y "short" también aparecen como muy influyentes, probablemente como indicadores de sentimiento negativo.</li>
+<li>Words like "long", "increased", "grew" and "expands" have high importance, suggesting that terms related to growth are strong predictors of positive sentiment.</li>
+<li>"Lower" and "short" also appear as highly influential, likely as indicators of negative sentiment.</li>
 </ul>
 </li>
-<li><p><strong>Términos de actividad corporativa</strong>:</p>
+<li><p><strong>Corporate activity terms</strong>:</p>
 <ul>
-<li>"Signed", "buy", "acquisition" y "option" tienen importancia significativa, indicando que las actividades corporativas como adquisiciones y acuerdos tienen peso en la determinación del sentimiento.</li>
+<li>"Signed", "buy", "acquisition" and "option" have significant importance, indicating that corporate activities like acquisitions and agreements carry weight in sentiment determination.</li>
 </ul>
 </li>
-<li><p><strong>Descriptores de estado financiero</strong>:</p>
+<li><p><strong>Financial state descriptors</strong>:</p>
 <ul>
-<li>"Strong" aparece como una característica importante, que claramente indica sentimiento positivo.</li>
-<li>"Total" y "price" también influyen considerablemente en las predicciones.</li>
+<li>"Strong" appears as an important feature, clearly indicating positive sentiment.</li>
+<li>"Total" and "price" also considerably influence predictions.</li>
 </ul>
 </li>
 </ol>
-<h3 id="An%C3%A1lisis-de-Predicciones-de-Muestra">Análisis de Predicciones de Muestra<a class="anchor-link" href="#An%C3%A1lisis-de-Predicciones-de-Muestra">¶</a></h3><p>Las predicciones de muestra revelan tanto fortalezas como limitaciones del modelo:</p>
+<h3 id="Sample-Prediction-Analysis">Sample Prediction Analysis<a class="anchor-link" href="#Sample-Prediction-Analysis">¶</a></h3><p>The sample predictions reveal both strengths and limitations of the model:</p>
 <ol>
-<li><p><strong>Caso positivo correcto</strong>:</p>
+<li><p><strong>Correct positive case</strong>:</p>
 <ul>
 <li>"The company reported strong earnings, beating analyst expectations with record revenue."</li>
-<li>Predicción: Positivo (78.9% de confianza)</li>
-<li>El modelo identifica correctamente términos positivos como "strong earnings" y "beating expectations".</li>
+<li>Prediction: Positive (78.9% confidence)</li>
+<li>The model correctly identifies positive terms like "strong earnings" and "beating expectations".</li>
 </ul>
 </li>
-<li><p><strong>Caso negativo mal clasificado</strong>:</p>
+<li><p><strong>Misclassified negative case</strong>:</p>
 <ul>
 <li>"The stock plummeted after the company announced significant losses in the last quarter."</li>
-<li>Predicción errónea: Positivo (55.6% de confianza)</li>
-<li><strong>Problema detectado</strong>: El modelo no capta adecuadamente el impacto negativo de palabras como "plummeted" y "losses", posiblemente porque estos términos no aparecieron con frecuencia suficiente en los datos de entrenamiento.</li>
+<li>Incorrect prediction: Positive (55.6% confidence)</li>
+<li><strong>Problem detected</strong>: The model doesn't adequately capture the negative impact of words like "plummeted" and "losses", possibly because these terms didn't appear frequently enough in the training data.</li>
 </ul>
 </li>
-<li><p><strong>Caso neutral correctamente clasificado</strong>:</p>
+<li><p><strong>Correctly classified neutral case</strong>:</p>
 <ul>
 <li>"The market remained stable today with minor fluctuations across major indices."</li>
-<li>Predicción: Neutral (51.3% de confianza)</li>
-<li>El modelo reconoce correctamente el lenguaje descriptivo neutral sin connotaciones positivas o negativas fuertes.</li>
+<li>Prediction: Neutral (51.3% confidence)</li>
+<li>The model correctly recognizes neutral descriptive language without strong positive or negative connotations.</li>
 </ul>
 </li>
 </ol>
-<p>Estos ejemplos confirman que el modelo funciona razonablemente bien con textos positivos y neutrales, pero tiene dificultades significativas con textos negativos, lo que coincide con los resultados observados en las matrices de confusión.</p>
+<p>These examples confirm that the model works reasonably well with positive and neutral texts but has significant difficulties with negative texts, which aligns with the observations from the confusion matrices.</p>
 </div>
 </div>
 </div>
@@ -9020,62 +9019,62 @@ Class Probabilities:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Conclusiones">Conclusiones<a class="anchor-link" href="#Conclusiones">¶</a></h2><p>La Regresión Logística fue el modelo con mejor rendimiento, alcanzando una precisión de <strong>0.6929</strong> en el conjunto de prueba, superando tanto a Naive Bayes (0.6835) como a Random Forest (0.6330).</p>
-<h3 id="Hallazgos-Principales">Hallazgos Principales<a class="anchor-link" href="#Hallazgos-Principales">¶</a></h3><ol>
-<li><p><strong>Desbalance de clases</strong>: El conjunto de datos presenta un fuerte desbalance (53.7% neutral, 31.8% positivo, 14.5% negativo), que impacta significativamente el rendimiento de los modelos, especialmente para la clase minoritaria (negativa).</p>
+<h2 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">¶</a></h2><p>Logistic Regression was the best-performing model, achieving an accuracy of <strong>0.6929</strong> on the test set, outperforming both Naive Bayes (0.6835) and Random Forest (0.6330).</p>
+<h3 id="Key-Findings">Key Findings<a class="anchor-link" href="#Key-Findings">¶</a></h3><ol>
+<li><p><strong>Class imbalance</strong>: The dataset exhibits a strong imbalance (53.7% neutral, 31.8% positive, 14.5% negative), which significantly impacts model performance, especially for the minority class (negative).</p>
 </li>
-<li><p><strong>Diferencias lingüísticas</strong>: Encontramos patrones lingüísticos distintos entre categorías de sentimiento:</p>
+<li><p><strong>Linguistic differences</strong>: We found distinct linguistic patterns between sentiment categories:</p>
 <ul>
-<li>Textos negativos: Más cortos y directos, pero difíciles de identificar por su menor representación.</li>
-<li>Textos neutrales: Más extensos, con lenguaje descriptivo y técnico.</li>
-<li>Textos positivos: Longitud moderada, con términos específicos de crecimiento y éxito.</li>
+<li>Negative texts: Shorter and more direct, but difficult to identify due to their lower representation.</li>
+<li>Neutral texts: Longer, with descriptive and technical language.</li>
+<li>Positive texts: Moderate length, with specific terms related to growth and success.</li>
 </ul>
 </li>
-<li><p><strong>Rendimiento por clase</strong>: Todos los modelos mostraron un comportamiento desigual:</p>
+<li><p><strong>Performance by class</strong>: All models showed uneven behavior:</p>
 <ul>
-<li>Excelente detección de textos neutrales (recall ~80-96%)</li>
-<li>Buena identificación de textos positivos (recall ~52-62%)</li>
-<li>Pobre reconocimiento de textos negativos (recall ~4-13%)</li>
+<li>Excellent detection of neutral texts (recall ~80-96%)</li>
+<li>Good identification of positive texts (recall ~52-62%)</li>
+<li>Poor recognition of negative texts (recall ~4-13%)</li>
 </ul>
 </li>
-<li><p><strong>Términos predictivos</strong>: Las palabras relacionadas con direccionalidad ("long", "lower", "increased"), actividad corporativa ("signed", "buy", "acquisition") y valoración financiera ("strong") resultaron ser los predictores más potentes.</p>
+<li><p><strong>Predictive terms</strong>: Words related to directionality ("long", "lower", "increased"), corporate activity ("signed", "buy", "acquisition") and financial valuation ("strong") proved to be the most powerful predictors.</p>
 </li>
 </ol>
-<h3 id="Aplicaciones-Pr%C3%A1cticas">Aplicaciones Prácticas<a class="anchor-link" href="#Aplicaciones-Pr%C3%A1cticas">¶</a></h3><p>Este modelo de análisis de sentimiento puede ser valioso para:</p>
+<h3 id="Practical-Applications">Practical Applications<a class="anchor-link" href="#Practical-Applications">¶</a></h3><p>This sentiment analysis model can be valuable for:</p>
 <ul>
-<li><strong>Monitoreo de mercado</strong>: Análisis automatizado de noticias financieras para detectar tendencias de sentimiento.</li>
-<li><strong>Inteligencia competitiva</strong>: Seguimiento del sentimiento en torno a competidores o sectores específicos.</li>
-<li><strong>Gestión de riesgos</strong>: Detección temprana de cambios en el sentimiento que podrían indicar riesgos emergentes.</li>
-<li><strong>Asistencia a la inversión</strong>: Complemento a los análisis fundamentales y técnicos con datos de sentimiento del mercado.</li>
-<li><strong>Relaciones con inversores</strong>: Evaluación de la recepción de comunicados corporativos.</li>
+<li><strong>Market monitoring</strong>: Automated analysis of financial news to detect sentiment trends.</li>
+<li><strong>Competitive intelligence</strong>: Tracking sentiment around competitors or specific sectors.</li>
+<li><strong>Risk management</strong>: Early detection of sentiment changes that might indicate emerging risks.</li>
+<li><strong>Investment assistance</strong>: Complement to fundamental and technical analyses with market sentiment data.</li>
+<li><strong>Investor relations</strong>: Evaluation of corporate communication reception.</li>
 </ul>
-<h3 id="Limitaciones-y-Consideraciones">Limitaciones y Consideraciones<a class="anchor-link" href="#Limitaciones-y-Consideraciones">¶</a></h3><ol>
-<li><strong>Debilidad en sentimiento negativo</strong>: El modelo presenta dificultades significativas para identificar textos negativos, lo que podría resultar en la omisión de alertas importantes.</li>
-<li><strong>Contexto y sutileza</strong>: El enfoque basado en palabras puede perder matices importantes que requieren comprensión contextual.</li>
-<li><strong>Sesgo temporal</strong>: El modelo está entrenado con datos históricos y podría no adaptarse a cambios en el lenguaje financiero.</li>
+<h3 id="Limitations-and-Considerations">Limitations and Considerations<a class="anchor-link" href="#Limitations-and-Considerations">¶</a></h3><ol>
+<li><strong>Weakness in negative sentiment</strong>: The model has significant difficulties identifying negative texts, which could result in missing important alerts.</li>
+<li><strong>Context and subtlety</strong>: The word-based approach may miss important nuances that require contextual understanding.</li>
+<li><strong>Temporal bias</strong>: The model is trained on historical data and might not adapt to changes in financial language.</li>
 </ol>
-<h3 id="Pr%C3%B3ximos-Pasos">Próximos Pasos<a class="anchor-link" href="#Pr%C3%B3ximos-Pasos">¶</a></h3><ol>
-<li><p><strong>Mejoras del Modelo</strong>:</p>
+<h3 id="Next-Steps">Next Steps<a class="anchor-link" href="#Next-Steps">¶</a></h3><ol>
+<li><p><strong>Model Improvements</strong>:</p>
 <ul>
-<li>Implementar técnicas de balanceo de clases (SMOTE, class_weight)</li>
-<li>Incorporar características de n-gramas para capturar mejor el contexto</li>
-<li>Experimentar con modelos más avanzados como BERT o FinBERT (específico para finanzas)</li>
-<li>Desarrollar un ensemble que aproveche las fortalezas de distintos modelos</li>
+<li>Implement class balancing techniques (SMOTE, class_weight)</li>
+<li>Incorporate n-gram features to better capture context</li>
+<li>Experiment with more advanced models like BERT or FinBERT (specific for finance)</li>
+<li>Develop an ensemble that leverages the strengths of different models</li>
 </ul>
 </li>
-<li><p><strong>Desarrollo de Aplicaciones</strong>:</p>
+<li><p><strong>Application Development</strong>:</p>
 <ul>
-<li>Crear una API para análisis de sentimiento en tiempo real</li>
-<li>Desarrollar un dashboard para monitoreo de tendencias</li>
-<li>Implementar alertas automatizadas para cambios significativos en el sentimiento</li>
+<li>Create an API for real-time sentiment analysis</li>
+<li>Develop a dashboard for trend monitoring</li>
+<li>Implement automated alerts for significant sentiment changes</li>
 </ul>
 </li>
-<li><p><strong>Análisis Adicionales</strong>:</p>
+<li><p><strong>Additional Analyses</strong>:</p>
 <ul>
-<li>Examinar tendencias de sentimiento por sector o industria</li>
-<li>Correlacionar sentimiento con movimientos posteriores del mercado</li>
-<li>Analizar variaciones geográficas en el sentimiento financiero</li>
-<li>Estudiar la evolución temporal del sentimiento durante eventos económicos</li>
+<li>Examine sentiment trends by sector or industry</li>
+<li>Correlate sentiment with subsequent market movements</li>
+<li>Analyze geographic variations in financial sentiment</li>
+<li>Study the temporal evolution of sentiment during economic events</li>
 </ul>
 </li>
 </ol>
